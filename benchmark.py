@@ -30,3 +30,14 @@ def float_benchmark():
 if __name__ == "__main__":
     integer_benchmark()
     float_benchmark()
+def memory_benchmark():
+    print("Running Memory Benchmark...")
+    size = 10**7 
+    data = [0] * size
+    start_time = time.time()
+    for i in range(5 * 10**9):
+        data[i % size] = i
+    for i in range(5 * 10**9):
+        val = data[i % size]
+    end_time = time.time()
+    print(f"Memory Benchmark Time: {end_time - start_time:.2f} seconds"
