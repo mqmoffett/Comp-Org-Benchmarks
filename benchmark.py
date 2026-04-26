@@ -40,4 +40,4 @@ def memory_benchmark():
     for i in range(5 * 10**9):
         val = data[i % size]
     end_time = time.time()
-    print(f"Memory Benchmark Time: {end_time - start_time:.2f} seconds"
+    print(f"Memory Benchmark Time: {end_time - start_time:.2f} seconds")
